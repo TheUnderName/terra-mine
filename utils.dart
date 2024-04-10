@@ -45,7 +45,7 @@ void writeTString(BinaryStream writer, String s) {
   writer.write(bytes.buffer);
 }
 
-void WritePacket(BinaryStream s, int p) {
+void writePacket(BinaryStream s, int p) {
   s.writeByte(0); // index terreria ++
   s.writeByte(p);
 }
