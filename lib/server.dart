@@ -1,11 +1,10 @@
 import "dart:io";
 import 'dart:typed_data';
-import 'dart:convert';
 
 import 'package:binary_stream/binary_stream.dart';
-import 'utils.dart';
-import 'networktext.dart';
-import 'player.dart';
+import 'io/utils.dart';
+import 'io/networktext.dart';
+import 'data/player/player.dart';
 
 class Server {
   late String ServerAddress;
