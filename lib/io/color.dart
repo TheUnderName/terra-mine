@@ -6,7 +6,7 @@ class GameColor {
   late int blue;
   late int alpha;
 
-  TColor(int red, int green, int blue) {
+  GameColor(int red, int green, int blue) {
     this.red = red & 0xFF;
     this.green = green & 0xFF;
     this.blue = blue & 0xFF;
@@ -27,6 +27,6 @@ class GameColor {
   }
 
   deserialize(BinaryStream data) {
-    return TColor(data.readByte(), data.readByte(), data.readByte());
+    return GameColor(data.readByte(), data.readByte(), data.readByte());
   }
 }
